@@ -1,9 +1,10 @@
 import Vue from "vue";
+import App from "./App.vue";
 
 new Vue({
     el: "#app",
-    template: "<h1 v-on:click='alertHello'>Hello, world!</h1>",
-    methods: {
-        alertHello: () => alert("Hello from the alert!")
+    template: "<App/>",
+    components: {
+        App
     }
 });
