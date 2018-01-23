@@ -13,7 +13,7 @@ module.exports = {
         filename: "../wwwroot/[name].js"
     },
     resolve: {
-        extensions: [".ts", ".vue"],
+        extensions: [".ts", ".vue", ".js"],
         alias: {
             "vue$": "vue/dist/vue.esm.js",
             "@": resolve("src")
