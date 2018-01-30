@@ -25,7 +25,7 @@ bld/
 # Visual Studio 2015 cache/options directory
 .vs/
 */wwwroot/lib
-*/ClientApp/**/*.js
+*/wwwroot/js/app.js
 *.db
 
 # MSTest test Results
