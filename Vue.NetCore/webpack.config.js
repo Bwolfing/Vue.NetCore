@@ -1,5 +1,6 @@
+/// <binding BeforeBuild='Run - Development' />
 "use strict";
-const path = require("path");
+var path = require("path");
 
 function resolve(dir) {
     return path.join(__dirname, dir);
@@ -7,30 +8,20 @@ function resolve(dir) {
 
 module.exports = {
     entry: {
-        main: "./src/main.ts"
+        main: "./ClientApp/main.ts"
     },
     output: {
-        filename: "../wwwroot/[name].js"
+        filename: "./wwwroot/[name].js"
     },
     resolve: {
         extensions: [".ts", ".vue", ".js"],
         alias: {
             "vue$": "vue/dist/vue.esm.js",
-            "@": resolve("src")
+            "@": resolve("./ClientApp")
         }
     },
     module: {
         rules: [
-            {
-                test: /\.ts$/,
-                loader: "ts-loader",
-                exclude: /node_modules/,
-                options: {
-                    appendTsSuffixTo: [
-                        /\.vue$/
-                    ]
-                }
-            },
             {
                 test: /\.vue$/,
                 loader: "vue-loader",
@@ -42,6 +33,16 @@ module.exports = {
                         }
                     },
                     esModule: true
+                }
+            },
+            {
+                test: /\.ts$/,
+                loader: "ts-loader",
+                exclude: /node_modules/,
+                options: {
+                    appendTsSuffixTo: [
+                        /\.vue$/
+                    ]
                 }
             }
         ]
