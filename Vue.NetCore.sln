@@ -4,6 +4,8 @@ VisualStudioVersion = 15.0.27130.2027
 MinimumVisualStudioVersion = 15.0.26124.0
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.NetCore.Webpack", "Vue.NetCore.Webpack\Vue.NetCore.Webpack.csproj", "{93C5C062-9C89-40E1-A17A-DDEE57A39536}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vue.NetCore.Shim", "Vue.NetCore.Shim\Vue.NetCore.Shim.csproj", "{F43BC229-B932-49D8-81F6-AEC5A7C3A884}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +16,10 @@ Global
 		{93C5C062-9C89-40E1-A17A-DDEE57A39536}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93C5C062-9C89-40E1-A17A-DDEE57A39536}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{93C5C062-9C89-40E1-A17A-DDEE57A39536}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F43BC229-B932-49D8-81F6-AEC5A7C3A884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F43BC229-B932-49D8-81F6-AEC5A7C3A884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F43BC229-B932-49D8-81F6-AEC5A7C3A884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F43BC229-B932-49D8-81F6-AEC5A7C3A884}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

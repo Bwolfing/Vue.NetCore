@@ -26,6 +26,7 @@ bld/
 .vs/
 */wwwroot/lib
 */wwwroot/js/app.js
+*/ClientApp/**/*.js
 *.db
 
 # MSTest test Results

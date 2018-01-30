@@ -14,14 +14,6 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="wwwroot\js\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Update="webpack.dev.conf.js">
-      <DependentUpon>webpack.config.js</DependentUpon>
-    </None>
-    <None Update="webpack.prod.conf.js">
-      <DependentUpon>webpack.config.js</DependentUpon>
-    </None>
+    <None Include="wwwroot\js\typings\vue-shim.d.ts" />
   </ItemGroup>
 </Project>
